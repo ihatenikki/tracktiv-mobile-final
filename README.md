@@ -1,6 +1,6 @@
 # Tracktiv
 
-Tracktiv é um aplicativo mobile desenvolvido para a disciplina de Programação Mobile. O objetivo do projeto é oferecer ao usuário uma forma simples e moderna de registrar atividades, acompanhar o progresso diário e mensal e interagir através de um feed social. O aplicativo foi construído com React Native utilizando Expo, explorando navegação, armazenamento local e elementos visuais animados.
+Tracktiv é um aplicativo mobile desenvolvido para a disciplina de Programação Mobile. O objetivo do projeto é oferecer ao usuário uma forma simples e moderna de registrar atividades, acompanhar o progresso diário e mensal e interagir através de um feed social. O aplicativo foi construído com React Native utilizando Expo, explorando navegação, armazenamento local e elementos visuais animados. A interface e a proposta geral do aplicativo foram inspiradas em um protótipo criado no Adobe XD durante o segundo período do curso, servindo como base conceitual para esta implementação.
 
 ## Integrantes do grupo
 
@@ -11,19 +11,19 @@ Reginaldo Brenno da Silva Guerra – 01606341
 Ricardo Araújo Ferreira Neto – 01753670  
 Ryan Cavalcanti Silva dos Santos – 01708489  
 
-Todos participaram do desenvolvimento conceitual. A implementação técnica, montagem do projeto e estruturação do aplicativo foram conduzidas por Nicolas Matheus da Silva Melo.
+Todos contribuíram para o desenvolvimento conceitual e organização do projeto. A implementação técnica completa e integração das funcionalidades foram conduzidas por Nicolas Matheus da Silva Melo, garantindo o funcionamento das telas, lógica interna e experiência final do aplicativo.
 
 ## Funcionalidades
 
 Onboarding com efeito visual de parallax, fundo desfocado e transições animadas.  
-Descoberta de atividades com cards interativos que exibem opções e sugestões.  
-Feed social com posts, nomes, horários, curtidas e comentários.  
-Timer completo para monitorar atividades com iniciar, pausar e resetar.  
-Sistema de registro de tempo salvo em armazenamento local.  
-Calendário interativo que exibe automaticamente o mês, destaca o dia atual e mostra dias que possuem registros.  
-Modal que exibe detalhes das atividades realizadas em cada dia.  
-Perfil do usuário com informações básicas e histórico de atividades.  
-Configurações com alternância entre modo claro e escuro.
+Descoberta de atividades com cards interativos que exibem sugestões personalizadas.  
+Feed social com posts, nomes, fotos, horários, curtidas e comentários.  
+Timer completo para monitoramento de atividades com iniciar, pausar e resetar.  
+Sistema de registro com armazenamento local utilizando AsyncStorage.  
+Calendário totalmente interativo que destaca o dia atual e exibe os dias com registros.  
+Modal com detalhes das atividades realizadas em cada data.  
+Perfil do usuário com informações e histórico recente.  
+Configurações com suporte a modo claro e modo escuro.
 
 ## Tecnologias utilizadas
 
@@ -32,7 +32,7 @@ Expo
 JavaScript ES6  
 AsyncStorage  
 Animated API  
-expo-blur  
+expo blur  
 React Hooks  
 
 ## Estrutura do projeto
@@ -65,4 +65,4 @@ O aplicativo está finalizado de acordo com os requisitos solicitados pelo profe
 
 ## Agradecimentos
 
-Agradecemos ao professor pela orientação e ao grupo pelo apoio durante o processo de construção, testes e validação do aplicativo.
+Agradecemos ao professor pela orientação e perdão pelo atraso, e ao grupo pelo apoio durante o processo de construção, testes e validação do aplicativo.
