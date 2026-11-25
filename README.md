@@ -1,68 +1,57 @@
 # Tracktiv
 
-Tracktiv é um aplicativo mobile desenvolvido para a disciplina de Programação Mobile. O objetivo do projeto é oferecer ao usuário uma forma simples e moderna de registrar atividades, acompanhar o progresso diário e mensal e interagir através de um feed social. O aplicativo foi construído com React Native utilizando Expo, explorando navegação, armazenamento local e elementos visuais animados. A interface e a proposta geral do aplicativo foram inspiradas em um protótipo criado no Adobe XD durante o segundo período do curso, servindo como base conceitual para esta implementação.
+Aplicativo acadêmico para registrar atividades e consultar o histórico em um calendário. Desenvolvido em grupo para a disciplina de Programação Mobile, com React Native e Expo.
 
-## Integrantes do grupo
+## O que está implementado
 
-Anthony Durval Oliveira Silva – 01714515  
-Gustavo Evangelista Lima Acioli – 01696112  
-Nicolas Matheus da Silva Melo – 01702941  
-Reginaldo Brenno da Silva Guerra – 01606341  
-Ricardo Araújo Ferreira Neto – 01753670  
-Ryan Cavalcanti Silva dos Santos – 01708489  
+- Apresentação inicial e seleção de atividades.
+- Cronômetro com início, pausa e reinício.
+- Registro de atividades por dia e consulta no calendário.
+- Feed demonstrativo com curtidas e comentários mantidos durante a sessão.
+- Perfil de demonstração e alternância entre temas claro e escuro.
 
-Todos contribuíram para o desenvolvimento conceitual e organização do projeto. A implementação técnica completa e integração das funcionalidades foram conduzidas por Nicolas Matheus da Silva Melo, garantindo o funcionamento das telas, lógica interna e experiência final do aplicativo.
+Os registros usam AsyncStorage no dispositivo. O código possui um fallback em memória quando esse armazenamento não está disponível; nesse caso, os dados não persistem após encerrar a execução.
 
-## Funcionalidades
+O feed usa dados locais definidos em `data.js`. O projeto não implementa servidor, autenticação ou uma rede social conectada.
 
-Onboarding com efeito visual de parallax, fundo desfocado e transições animadas.  
-Descoberta de atividades com cards interativos que exibem sugestões personalizadas.  
-Feed social com posts, nomes, fotos, horários, curtidas e comentários.  
-Timer completo para monitoramento de atividades com iniciar, pausar e resetar.  
-Sistema de registro com armazenamento local utilizando AsyncStorage.  
-Calendário totalmente interativo que destaca o dia atual e exibe os dias com registros.  
-Modal com detalhes das atividades realizadas em cada data.  
-Perfil do usuário com informações e histórico recente.  
-Configurações com suporte a modo claro e modo escuro.
+## Tecnologias
 
-## Tecnologias utilizadas
+JavaScript, React 19.1, React Native 0.81 e Expo SDK 54. A interface utiliza Animated API, React Native Paper, Expo Blur, Expo Linear Gradient e ícones do Expo; os registros utilizam AsyncStorage.
 
-React Native  
-Expo  
-JavaScript ES6  
-AsyncStorage  
-Animated API  
-expo blur  
-React Hooks  
+## Executar
 
-## Estrutura do projeto
+Com Node.js e npm instalados, execute na raiz:
 
-projeto-mobile---tracktiv  
-assets  
-App.js  
-screens.js  
-components.js  
-data.js  
-storage.js  
-theme.js  
-package.json  
-README.md  
+```sh
+npm install
+npx expo start
+```
 
-## Como executar
+Abra em um dispositivo ou emulador compatível com o Expo SDK 54. Os scripts `npm run android` e `npm run ios` iniciam o Expo para essas plataformas; o ambiente de desenvolvimento correspondente precisa estar configurado.
 
-Instale as dependências  
-npm install  
+As imagens externas das atividades dependem de conexão com a internet.
 
-Inicie o projeto  
-expo start  
+## Estrutura
 
-Use o aplicativo Expo Go para abrir no celular através do QR Code.
+```text
+App.js          Estado da aplicação e navegação entre telas
+screens.js      Telas e fluxos de interação
+components.js   Componentes compartilhados
+data.js         Usuários, atividades e posts de demonstração
+storage.js      Registros locais e fallback em memória
+theme.js        Temas claro e escuro
+assets/         Recursos visuais do projeto
+app.json        Configuração do Expo
+```
 
+## Autoria
 
-## Status do projeto
+Projeto coletivo de Anthony Durval Oliveira Silva, Gustavo Evangelista Lima Acioli, Nicolas Matheus da Silva Melo, Reginaldo Brenno da Silva Guerra, Ricardo Araújo Ferreira Neto e Ryan Cavalcanti Silva dos Santos.
 
-O aplicativo está finalizado de acordo com os requisitos solicitados pelo professor. Todas as telas funcionam, há persistência de dados, timer, calendário interativo, feed, perfil, configurações e interface responsiva.
+O registro original do trabalho atribui ao grupo a concepção e a organização, e a Nicolas Melo a implementação técnica e a integração das funcionalidades. A proposta de interface partiu de um protótipo acadêmico desenvolvido no Adobe XD.
 
-## Agradecimentos
+## Estado do projeto
 
-Agradecemos ao professor pela orientação e perdão pelo atraso, e ao grupo pelo apoio durante o processo de construção, testes e validação do aplicativo.
+Entregue como trabalho acadêmico, conforme a documentação original. Este repositório preserva essa implementação. Não há suíte de testes nem arquivo de lock de dependências versionados; uma execução atual no dispositivo ainda precisa ser validada antes de uma nova entrega.
+
+Os retratos dos integrantes e as imagens externas devem conservar os respectivos créditos e autorizações de uso. O campo `license` existente em `package.json` não foi alterado.
